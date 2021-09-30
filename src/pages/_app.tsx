@@ -3,6 +3,11 @@ import { Materialize } from '../styles/Materialize'
 import { Global, css } from '@emotion/react'
 import Head from 'next/head'
 import {fonts} from '../styles/fonts'
+import '../styles/slider/slider.css'
+import "swiper/css";
+import 'swiper/css/navigation';
+
+
 const  MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>

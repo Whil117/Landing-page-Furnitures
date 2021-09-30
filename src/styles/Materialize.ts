@@ -19,6 +19,7 @@ export const Materialize = css`
  */
 body {
   margin: 0;
+  background-color: white;
 }
 main {
   display: block;
