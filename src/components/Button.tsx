@@ -1,5 +1,6 @@
 import { FC } from "react";
 import styled from "@emotion/styled";
+import { colors as Colores } from "../styles/colors";
 
 interface IButton {
   styles: {
@@ -15,6 +16,7 @@ type TColors = {
   secondary: string;
   danger: string;
   disabled: string;
+  selection:string
 };
 type TSize = {
   sm: string;
@@ -27,6 +29,7 @@ const colors: TColors = {
   secondary: "gray",
   danger: "red",
   disabled: "gray",
+  selection: `${Colores.green}`,
 };
 const size: TSize = {
   sm: "scale(0.5,0.5)",
@@ -38,7 +41,8 @@ const Button = styled.button<IButton>`
   cursor: pointer;
   border: ${({ styles }) => (styles.outline ? "1px solid blue" : "none")};
   background-color: ${({ styles }) => colors[styles.color]};
-  box-shadow: ${({ styles }) =>  styles.disabledShadow ? "none" : "2px 2px gray"};
+  box-shadow: ${({ styles }) =>
+    styles.disabledShadow ? "none" : "2px 2px gray"};
   transform: ${({ styles }) => size[styles.size]};
   color: ${({ styles }) => (styles.color === "default" ? "black" : "white")};
   padding: 5px 10px;
