@@ -24,7 +24,7 @@ const Styles: FC = () => {
   return (
     <Style>
       <div style={{ width: "602px" }}>
-        <h2 style={{fontSize:"36px"}}>
+        <h2 style={{ fontSize: "36px" }}>
           Nuevos <span style={{ color: colors.green }}>Estilos</span>{" "}
           minimalistas
         </h2>
@@ -34,30 +34,26 @@ const Styles: FC = () => {
           tanto nosotros proveemos muchos diseños con la mejor calidad
         </p>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <article>
-            {optionsStyle.map((option, index) => (
-              <>
-                {index <= 2 && (
-                  <div  key={option} style={{ display: "flex", margin: "5px" }}>
-                    <img src="/icons/checks.svg" alt={option} />
-                    <p>{option}</p>
-                  </div>
-                )}
-              </>
-            ))}
-          </article>
-          <article>
-            {optionsStyle.map((option, index) => (
-              <>
-                {index > 2 && (
-                  <div  key={option} style={{ display: "flex", margin: "5px" }}>
-                    <img src="/icons/checks.svg" alt={option} />
-                    <p >{option}</p>
-                  </div>
-                )}
-              </>
-            ))}
-          </article>
+          {optionsStyle.map((option, index) => (
+            <article key={option}>
+              {index <= 2 && (
+                <div key={option} style={{ display: "flex", margin: "5px" }}>
+                  <img src="/icons/checks.svg" alt={option} />
+                  <p>{option}</p>
+                </div>
+              )}
+            </article>
+          ))}
+          {optionsStyle.map((option, index) => (
+            <article key={option}>
+              {index > 2 && (
+                <div key={option} style={{ display: "flex", margin: "5px" }}>
+                  <img src="/icons/checks.svg" alt={option} />
+                  <p>{option}</p>
+                </div>
+              )}
+            </article>
+          ))}
         </div>
         <StyleDetails>
           <div>
@@ -65,17 +61,19 @@ const Styles: FC = () => {
             <p>Material</p>
           </div>
           <div>
-            <div style={{ display: "flex" ,}}>
+            <div style={{ display: "flex" }}>
               {Test.colors.map((color) => (
                 <div
                   key={color}
                   style={{
                     width: "46px",
                     height: "57px",
-                    borderRadius:"5px",
-                    outline:`1px solid ${color === "white" ? "black" : "none"}`,
-                    outlineOffset:"-2px",
-                    backgroundColor: color ,
+                    borderRadius: "5px",
+                    outline: `1px solid ${
+                      color === "white" ? "black" : "none"
+                    }`,
+                    outlineOffset: "-2px",
+                    backgroundColor: color,
                   }}
                 ></div>
               ))}
@@ -91,7 +89,7 @@ const Styles: FC = () => {
                 justifyContent: "center",
                 width: "161px",
                 height: "57px",
-                borderRadius:"5px"
+                borderRadius: "5px",
               }}
             >
               {Test.dimensions}

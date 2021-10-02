@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import { FC } from "react";
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import Button from '@material-ui/core/Button';
+import slider from './assets/data'
 import { colors } from "../../styles/colors";
 import { fontsWeight } from "../../styles/fonts";
 import { BuyNow, EHome, Eslogan } from "../../styles/components/Home/Home";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
-import slider from './assets/data'
 
 const Home: FC = () => {
   return (
@@ -24,7 +25,7 @@ const Home: FC = () => {
           asequible
         </p>
         <Link href="/products" passHref>
-          <BuyNow>Comprar Ahora</BuyNow>
+          <Button variant="contained" color="primary">Comprar Ahora</Button>
         </Link>
       </div>
       <div className="slider">

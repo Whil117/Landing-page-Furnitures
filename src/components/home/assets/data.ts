@@ -1,5 +1,15 @@
+interface ISlider {
+  name:string,
+  img:string,
+  style:{
+    width:string,
+    height:string,
+  }
+}
 
-const slider = [
+
+
+const slider:ISlider[] = [
     {
       name: "mueblecenter1",
       img: "/images/1.png",

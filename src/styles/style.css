@@ -1,0 +1,18 @@
+:root{
+    --color-green:#6BC742;
+    --color-white:white;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root{
+    background-color:var(--color-green);
+
+}
+.css-sghohy-MuiButtonBase-root-MuiButton-root:hover{
+    outline: 1px solid var(--color-green);
+    outline-offset: -2px;
+    color: var(--color-green);
+    background-color: var(--color-white);  
+}
+body{
+    background-color: white;
+}

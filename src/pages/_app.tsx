@@ -4,6 +4,7 @@ import { Global, css } from '@emotion/react'
 import Head from 'next/head'
 import {fonts} from '../styles/fonts'
 import '../styles/slider/slider.css'
+import '../styles/style.css'
 import "swiper/css";
 import 'swiper/css/navigation';
 

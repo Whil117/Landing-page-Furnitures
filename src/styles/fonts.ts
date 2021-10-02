@@ -1,8 +1,16 @@
 interface IFonts {
   link: string;
 }
+interface IFontWeight {
+  thin:number,
+  light:number,
+  regular:number,
+  medium:number,
+  bold:number,
+  black:number
+}
 
-export const fontsWeight = {
+export const fontsWeight:IFontWeight = {
     thin:100,
     light:300,
     regular:400,

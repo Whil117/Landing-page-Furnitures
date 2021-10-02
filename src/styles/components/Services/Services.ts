@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { colors } from "../../colors";
 
 export const Card = styled.div`
   display: flex;
@@ -15,19 +14,16 @@ export const Card = styled.div`
   cursor: pointer;
   margin: 10x;
   transition: 0.3s;
-  transform: scale(0.9,0.9);
+  transform: scale(0.9, 0.9);
   &:hover {
-    transform: scale(1,1);
-    color: white;
-    background-color: ${colors.green};
+    transform: scale(1,1); 
   }
-  img{
-
-    background-color:white;
-    padding:5px;
-    border-radius:5px;
-    svg{
-      path{
+  img {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    svg {
+      path {
         fill: white;
       }
     }

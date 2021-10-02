@@ -8,5 +8,5 @@ interface IColors {
     black: "#333333",
     green: "#6BC742",
     white:"white",
-    gray:"#dddcdd"
+    gray:"#ebebeb"
   };
