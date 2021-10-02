@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { FC } from "react";
+
 import { Card } from "../../styles/components/Services/Services";
 import { EServices } from "../../styles/components/Services/Styles";
-import AtomIcon from "../SvgDynamic";
 import services, { IService } from "./assets/data";
 
 const Services: FC = () => {
@@ -20,7 +20,7 @@ const Services: FC = () => {
       <div className="EServicesBlock2">
         {services.map((service: IService) => (
           <Card key={service.id}>
-            <AtomIcon name={service.img}  />
+            <img src={service.img} alt={service.title} />
             <div className="CardBlock">
               <h2>{service.title}</h2>
               <p>{service.desc}</p>

@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import { FC, useState } from "react";
 import CButton from "../Button";
 import { LabelOption } from "../../styles/components/Products/Products";
+import { data } from "../../styles/components/Products/assets/data";
 
 const categories = ["Todos", "Sofás", "Sillas", "Mesas", "Muebles"];
-
 interface IActive {
   category: string;
 }
@@ -43,7 +44,15 @@ const Products: FC = () => {
           ))}
         </div>
       </nav>
-      <div></div>
+      <div>
+        {data.map(artcl=> (
+            <div key={artcl.id}>
+                <img src={artcl.img} alt={artcl.title} />
+                <h3>{artcl.title}</h3>
+                <p>{artcl.desc}</p>
+            </div>
+        ))}
+      </div>
     </div>
   );
 };
