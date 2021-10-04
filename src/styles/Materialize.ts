@@ -20,6 +20,7 @@ export const Materialize = css`
 body {
   margin: 0;
   background-color: white;
+  transition: 0.3s;
 }
 main {
   display: block;

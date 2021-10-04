@@ -1,14 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import { FC } from "react";
-
-import { Card } from "../../styles/components/Services/Services";
-import { EServices } from "../../styles/components/Services/Styles";
+import {
+  Card,
+  CardDetails,
+  Cards,
+  DivTitle,
+  EServices,
+} from "../../styles/components/Services/Services";
 import services, { IService } from "./assets/data";
 
 const Services: FC = () => {
   return (
     <EServices>
-      <div className="EServicesBlock1">
+      <DivTitle>
         <h1>
           Los mejores <span>Servicios</span> para ti
         </h1>
@@ -16,18 +20,18 @@ const Services: FC = () => {
           disfruta de nuestro mejor servicio para que tu compra sea
           satisfactoria
         </p>
-      </div>
-      <div className="EServicesBlock2">
+      </DivTitle>
+      <Cards>
         {services.map((service: IService) => (
           <Card key={service.id}>
             <img src={service.img} alt={service.title} />
-            <div className="CardBlock">
+            <CardDetails>
               <h2>{service.title}</h2>
               <p>{service.desc}</p>
-            </div>
+            </CardDetails>
           </Card>
         ))}
-      </div>
+      </Cards>
     </EServices>
   );
 };

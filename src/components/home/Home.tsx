@@ -3,29 +3,27 @@ import { FC } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
-import Button from '@material-ui/core/Button';
 import slider from './assets/data'
 import { colors } from "../../styles/colors";
-import { fontsWeight } from "../../styles/fonts";
-import { BuyNow, EHome, Eslogan } from "../../styles/components/Home/Home";
+import { BuyNow, EHome, Eslogan, EsloganSmall, Phrase } from "../../styles/components/Home/Home";
 
 const Home: FC = () => {
   return (
     <EHome>
       <div>
-        <p style={{ margin:"0",color: colors.green,fontSize:"x-large", fontWeight: fontsWeight.medium }}>
+        <EsloganSmall>
           ¡La mejor opción para ti!
-        </p>
+        </EsloganSmall>
         <Eslogan>
           Elija los <span style={{ color: colors.green }}>Muebles</span> más
           modernos para vivir mejor
         </Eslogan>
-        <p style={{ width: "440px", height: "42px", fontSize: "medium" }}>
+        <Phrase>
           Muebles modernos con el sentido del diseño del momento a un precio
           asequible
-        </p>
+        </Phrase>
         <Link href="/products" passHref>
-          <Button variant="contained" color="primary">Comprar Ahora</Button>
+          <BuyNow >Comprar Ahora</BuyNow>
         </Link>
       </div>
       <div className="slider">
