@@ -11,6 +11,7 @@ import {
   StyleDivDetails,
   TextInformation,
   Texture,
+  Textures,
 } from "../../styles/components/Styles/Styles";
 import StyleImg from "../../../public/images/7.png";
 import Image from "next/image";
@@ -33,6 +34,9 @@ const Test = {
 const Styles: FC = () => {
   return (
     <Style>
+      <div>
+        <Image src={StyleImg} alt="stylyeimg1" />
+      </div>
       <StyleDivDetails>
         <h2>
           Nuevos <span>Estilos</span> minimalistas
@@ -51,10 +55,10 @@ const Styles: FC = () => {
           ))}
         </ChecksDiv>
         <StyleDetails>
-          <div>
+          <Textures>
             <Texture src={Test.material} alt={Test.material} />
             <p>Material</p>
-          </div>
+          </Textures>
           <ColorsBox>
             <div>
               {Test.colors.map((color) => (
@@ -64,16 +68,11 @@ const Styles: FC = () => {
             <p>Disponible En</p>
           </ColorsBox>
           <Dimentions>
-            <div>
-              <p>{Test.dimensions}</p>
-            </div>
+            <p>{Test.dimensions}</p>
             <p>Dimensiones</p>
           </Dimentions>
         </StyleDetails>
       </StyleDivDetails>
-      <div>
-        <Image src={StyleImg} alt="stylyeimg1" />
-      </div>
     </Style>
   );
 };

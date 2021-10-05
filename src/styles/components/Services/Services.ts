@@ -36,12 +36,10 @@ export const Card = styled.div`
   justify-content: center;
   align-items: center;
   padding: 21px 25px;
-  /* width: 260px; */
   height: 181px;
   background: #ffffff;
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  /* margin: 10x; */
   transition: 0.3s;
   transform: scale(0.9, 0.9);
 `;

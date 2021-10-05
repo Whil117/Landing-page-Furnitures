@@ -4,12 +4,15 @@ import { colors } from "../../colors";
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  padding: 20px 100px;
+  padding: 10px 50px;
   height: 41px;
   background: #ffffff;
   color: ${colors.black};
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   margin: 0 0 100px 0;
+  top:0;
+  position:sticky;
+  z-index:10;
   .optionsPc {
     display: flex;
     justify-content: space-between;

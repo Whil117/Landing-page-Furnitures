@@ -27,7 +27,7 @@ export const BuyNow = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
   width: 110px;
   color: ${colors.white};
   font-weight: ${fontsWeight.bold};
@@ -35,15 +35,14 @@ export const BuyNow = styled.a`
   text-decoration: none;
   background: ${colors.green};
   border-radius: 5px;
+  outline-offset: -1px;
+
   &:hover {
     transition: 0.3s;
-
-    /* border: 1px solid ${colors.green}; */
     outline: 1px solid ${colors.green};
-    outline-offset: -2px;
+    /* outline-offset: -1px; */
     color: ${colors.green};
     background-color: ${colors.white};
-    /* text-decoration: underline; */
   }
 `;
 

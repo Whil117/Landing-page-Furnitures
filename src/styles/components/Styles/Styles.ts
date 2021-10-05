@@ -4,6 +4,12 @@ import { colors } from "../../../styles/colors";
 interface Color {
   color: string;
 }
+
+export const Textures = styled.div`
+    p{
+      margin:12px 0;
+    }
+`
 export const Dimentions = styled.div`
   div {
     outline: 1px solid black;
@@ -35,20 +41,21 @@ export const Colors = styled.div<Color>`
   border-radius: 5px;
   outline: 1px solid ${({ color }) => (color === "white" ? "black" : "none")};
   background-color: ${({ color }) => color};
-  outline-offset: -2px;
+  outline-offset: -1px;
   margin: 1px;
 `;
 
 export const TextInformation = styled.p`
-  width: 602px;
+  width: 590px;
   font-size: 14px;
 `;
 
 export const Style = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: space-around;
-  padding: 20px 100px;
+  margin: 120px 0;
+
 `;
 export const StyleDivDetails = styled.div`
   width: 602px;
@@ -72,7 +79,7 @@ export const Check = styled.article`
     height: 44px;
   }
   p {
-    font-size: 12px;
+    font-size: 13px;
   }
 `;
 export const StyleDetails = styled.aside`
@@ -80,7 +87,7 @@ export const StyleDetails = styled.aside`
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  padding: 16px 23px;
+  padding: 10px 20px;
   width: 370px;
   background: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
