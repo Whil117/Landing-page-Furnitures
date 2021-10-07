@@ -75,13 +75,13 @@ export const StyledHome = styled.div`
   flex-wrap: wrap;
   align-items: center;
 
-  @media (max-width: 768px) {
+  @media (min-width: 425px) and (max-width: 768px) {
     height: 700px;
   }
-  @media (max-width: 425px) {
+  @media (min-width: 375px) and (max-width: 425px) {
     height: 800px;
   }
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 375px) {
     height: 900px;
   }
 `;
@@ -93,16 +93,16 @@ export const HomeSlider = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  @media (max-width:1024px){
-    width: 460px;
+  @media (min-width: 768px) and(max-width:1024px) {
+    width: 440px;
   }
-  @media (max-width: 425px) {
-    width: 405px;
+  @media (min-width: 425px) and (max-width: 768px) {
+    width: 390px;
   }
-  @media (max-width: 375px) {
-    width: 355px;
+  @media (min-width: 375px) and (max-width: 425px) {
+    width: 370px;
   }
-  @media (max-width: 320px) {
+  @media (min-width: 320px) and (max-width: 375px) {
     width: 300px;
   }
 `;
