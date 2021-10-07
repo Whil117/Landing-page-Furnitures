@@ -1,30 +1,29 @@
-import { FC } from "react";
-import { Nav } from "../../styles/components/NavBar/NavBar";
-import { colors } from "../../styles/colors";
 import Link from "next/link";
+import { FC } from "react";
 import options from "./assets/data";
+import * as S from "../../styles/components/NavBar/NavBar";
 
 const NavBar: FC = () => {
   return (
-    <Nav>
+    <S.StyledNavBar>
       <Link href="/">
         <a style={{ textDecoration: "none" }}>
-          <h1 style={{ color: colors.black }}>
-            Mueble <span style={{ color: colors.green }}>Center</span>{" "}
-          </h1>
+          <S.NavBarTitle>
+            Mueble <span>Center</span>{" "}
+          </S.NavBarTitle>
         </a>
       </Link>
-      <div className="optionsPc">
+      <S.NavBarOptions>
         {options.map((option) => (
           <a key={option} href={`#${option}`}>
             {option}
           </a>
         ))}
-      </div>
-      <div className="optionsMob">
+      </S.NavBarOptions>
+      <S.NavBarMenu>
         <svg
-          width="50"
-          height="50"
+          width="30"
+          height="30"
           viewBox="0 0 50 50"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -36,8 +35,8 @@ const NavBar: FC = () => {
           />
           <path d="M7.8125 37.5H42.1875V40.625H7.8125V37.5Z" fill="#333333" />
         </svg>
-      </div>
-    </Nav>
+      </S.NavBarMenu>
+    </S.StyledNavBar>
   );
 };
 

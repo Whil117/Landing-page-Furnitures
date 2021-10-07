@@ -2,50 +2,43 @@
 import { FC } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
-import slider from './assets/data'
-import { colors } from "../../styles/colors";
-import { BuyNow, EHome, Eslogan, EsloganSmall, Phrase } from "../../styles/components/Home/Home";
+import { Navigation } from "swiper";
+import slider from "./assets/data";
+import * as S from "../../styles/components/Home/Home"
+
 
 const Home: FC = () => {
   return (
-    <EHome>
-      <div>
-        <EsloganSmall>
-          ¡La mejor opción para ti!
-        </EsloganSmall>
-        <Eslogan>
-          Elija los <span style={{ color: colors.green }}>Muebles</span> más
-          modernos para vivir mejor
-        </Eslogan>
-        <Phrase>
+    <S.StyledHome>
+      <S.HomeEsloganBox>
+        <S.HomeEsloganSmall>¡La mejor opción para ti!</S.HomeEsloganSmall>
+        <S.HomeEslogan>
+          Elija los <span>Muebles</span> más modernos para vivir mejor
+        </S.HomeEslogan>
+        <S.HomePhrase>
           Muebles modernos con el sentido del diseño del momento a un precio
           asequible
-        </Phrase>
+        </S.HomePhrase>
         <Link href="/products" passHref>
-          <BuyNow >Comprar Ahora</BuyNow>
+          <S.HomeBuy>Comprar Ahora</S.HomeBuy>
         </Link>
-      </div>
-      <div className="slider">
+      </S.HomeEsloganBox>
+      <S.HomeSlider>
         <Swiper
           className="mySwiper"
-          modules={[Navigation, Pagination]}
+          modules={[Navigation]}
           navigation
-          pagination={{
-            clickable: true,
-            dynamicBullets: true,
-          }}
-          spaceBetween={50}
-          slidesPerView={1.2}
+          spaceBetween={1}
+          slidesPerView={1}
         >
           {slider.map((img) => (
             <SwiperSlide key={img.name}>
-              <img src={img.img} alt={img.name} style={img.style} />
+              <S.HomeSliderImg src={img.img} alt={img.name}  />
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-    </EHome>
+      </S.HomeSlider>
+    </S.StyledHome>
   );
 };
 

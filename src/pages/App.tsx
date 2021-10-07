@@ -16,9 +16,9 @@ const App: FC = () => {
       <main style={{ fontFamily: "roboto", color: colors.black }}>
         <NavBar />
         <Home />
-        <Services />
+        {/* <Services />
         <Styles />
-        <Products />
+        <Products /> */}
       </main>
     </>
   );
