@@ -6,6 +6,8 @@ import Head from "next/head";
 import Services from "../components/Services/Services";
 import Styles from "../components/Styles/Styles";
 import Products from "../components/Products/Products";
+import Clients from "../components/Clients/Clients";
+import Footer from "../components/Clients/Footer/Footer";
 
 const App: FC = () => {
   return (
@@ -16,9 +18,11 @@ const App: FC = () => {
       <main style={{ fontFamily: "roboto", color: colors.black }}>
         <NavBar />
         <Home />
-        {/* <Services />
+        <Services />
         <Styles />
-        <Products /> */}
+        <Products />
+        <Clients />
+        <Footer />
       </main>
     </>
   );

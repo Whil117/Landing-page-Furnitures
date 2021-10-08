@@ -1,65 +1,43 @@
 import styled from "@emotion/styled";
 import { colors } from "../../colors";
 import { fontsWeight } from "../../fonts";
+interface Color {
+  color: string;
+}
 
-export const Title = styled.h3`
+export const StyledProducts = styled.div`
+  margin: 0 0 100px 0;
+`;
+
+export const ProductsNavBar = styled.nav`
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between;
+  align-items: center; */
+  padding: 0 50px;
+  flex-wrap: wrap;
+`;
+export const ProductsNavBarTitle = styled.h3`
   font-size: 36px;
-  top: -100px;
 `;
-type Active = {
-  active: Boolean;
-};
 
-export const DData = styled.div`
+export const Products = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 `;
 
-export const DCategory = styled.div`
-  display: flex;
-  justify-content: space-around;
-  width: 400px;
-  div {
-    input {
-      display: none;
-    }
-  }
-`;
-
-export const Navegation = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  padding: 0 100px;
-  flex-wrap: wrap;
-  align-items: center;
-`;
-
-export const LabelOption = styled.label<Active>`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  width: 50px;
-  font-weight: ${({ active }) =>
-    active ? fontsWeight.medium : fontsWeight.regular};
-  height: 20px;
-  color: ${({ active }) => (active ? colors.white : colors.black)};
-  background: ${({ active }) => (active ? colors.green : colors.gray)};
-  border-radius: 5px;
-  transition: 0.3s;
-`;
-export const Card = styled.a`
-  width: 250px;
-  margin: 20px;
+export const Product = styled.a`
+  width: 200px;
+  margin: 25px;
   color: ${colors.black};
   text-decoration: none;
   transition: 0.3s;
   padding: 10px;
   border-radius: 5px;
   img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
   div {
     display: flex;
@@ -75,11 +53,7 @@ export const Card = styled.a`
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   }
 `;
-
-interface Color {
-  color: string;
-}
-export const ColorCircle = styled.div<Color>`
+export const ProductColors = styled.div<Color>`
   background-color: ${({ color }) => color};
   outline: 1px solid ${({ color }) => (color === "#FFFFFF" ? "black" : "none")};
   outline-offset: -1px;
@@ -87,15 +61,10 @@ export const ColorCircle = styled.div<Color>`
   height: 30px;
   border-radius: 50px;
 `;
-export const Price = styled.p`
+
+export const ProductPrice = styled.p`
   font-weight: ${fontsWeight.bold};
 `;
-
-export const ProductsDiv = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 export const ProductsLink = styled.a`
   display: flex;
   justify-content: center;
@@ -108,4 +77,9 @@ export const ProductsLink = styled.a`
   text-decoration: none;
   color: ${colors.green};
   font-weight: ${fontsWeight.bold};
+`;
+
+export const ProductBoxLink = styled.div`
+  display: flex;
+  justify-content: center;
 `;

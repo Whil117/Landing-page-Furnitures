@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Brooklyn Simmons",
+        "img":"/clients/client1.png",
+        "profession": " Medical Assistant",
+        "comment": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper tincidunt nibh eget amet in massa porttitor habitant. Velit, ut imperdiet eget vel, vitae mauris nulla quis eget. Bibendum mauris amet lacus vitae netus. Porttitor risus cursus integer vestibulum sit ante.”"
+    },
+    {
+        "id": 2,
+        "name": "Jerome Bell",
+        "img":"/clients/client2.png",
+        "profession": " Coatch Assistant",
+        "comment": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper tincidunt nibh eget amet in massa porttitor habitant. Velit, ut imperdiet eget vel, vitae mauris nulla quis eget. Bibendum mauris amet lacus vitae netus. "
+    }
+]

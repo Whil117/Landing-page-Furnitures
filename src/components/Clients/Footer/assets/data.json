@@ -1,0 +1,15 @@
+[
+    {
+        "menu": [
+            "Home",
+            "Decoración",
+            "Productos"
+        ],
+        "services":[
+            "Productos Recientes",
+            "Envios",
+            "Consultotía",
+            "Garantía"
+        ]
+    }
+]

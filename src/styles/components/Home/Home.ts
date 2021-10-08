@@ -24,6 +24,12 @@ export const HomePhrase = styled.p`
     width: auto;
     text-align: center;
   }
+  @media (max-width:425px){
+    width:358.1px;
+  }
+  @media (min-width:320px) and (max-width:375px){
+    width:285px;
+  }
 `;
 
 export const HomeEsloganSmall = styled.p`
@@ -74,35 +80,37 @@ export const StyledHome = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-
+  margin:0 0 100px 0;
   @media (min-width: 425px) and (max-width: 768px) {
     height: 700px;
   }
   @media (min-width: 375px) and (max-width: 425px) {
-    height: 800px;
+    height: 680px;
   }
   @media (min-width: 320px) and (max-width: 375px) {
-    height: 900px;
+    height: 700px;
   }
 `;
 
 export const HomeSlider = styled.div`
-  width: 600px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  @media (min-width: 768px) and(max-width:1024px) {
-    width: 440px;
-  }
+
+
   @media (min-width: 425px) and (max-width: 768px) {
     width: 390px;
   }
   @media (min-width: 375px) and (max-width: 425px) {
-    width: 370px;
+    width: 381px;
   }
   @media (min-width: 320px) and (max-width: 375px) {
     width: 300px;
+  }
+    @media (min-width: 768px) and (max-width:1024px) {
+    width: 520px;
   }
 `;

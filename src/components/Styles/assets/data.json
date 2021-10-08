@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "material": "/textures/1.png",
+        "colors": [
+            "#333333",
+            "#1751cf",
+            "white"
+        ],
+        "dimensions": "72 * 66.5 * 102 CM"
+    }
+]
