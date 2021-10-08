@@ -16,8 +16,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <title>Mueble Center</title>
 
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta property="og:image" content="./prevpage.png"></meta>
-        <meta name="theme-color" content={colors.green}></meta>
+        <meta property="og:image" content="./prev2.jpg" />
+        <meta name="theme-color" content={colors.green} />
         <link rel="stylesheet" href={fonts.link} />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
