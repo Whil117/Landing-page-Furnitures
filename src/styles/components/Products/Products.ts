@@ -52,6 +52,10 @@ export const Product = styled.a`
     background: #ffffff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   }
+  @media (max-width:768px) {
+    margin: 5px;
+    padding: 0px;
+  }
 `;
 export const ProductColors = styled.div<Color>`
   background-color: ${({ color }) => color};

@@ -75,7 +75,9 @@ export const StyledStyle = styled.div`
   flex-wrap: wrap-reverse;
   justify-content: space-around;
   margin: 0 0 100px 0;
-
+  @media (max-width:768px){
+    height: 1030px;
+  }
 `;
 export const StyleInfo = styled.div`
   width: 602px;

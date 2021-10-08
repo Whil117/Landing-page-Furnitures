@@ -11,20 +11,15 @@ import Footer from "../components/Clients/Footer/Footer";
 
 const App: FC = () => {
   return (
-    <>
-    <Head>
-        <title>Mueble Center</title>
-    </Head>
-      <main style={{ fontFamily: "roboto", color: colors.black }}>
-        <NavBar />
-        <Home />
-        <Services />
-        <Styles />
-        <Products />
-        <Clients />
-        <Footer />
-      </main>
-    </>
+    <main style={{ fontFamily: "roboto", color: colors.black }}>
+      <NavBar />
+      <Home />
+      <Services />
+      <Styles />
+      <Products />
+      <Clients />
+      <Footer />
+    </main>
   );
 };
 
