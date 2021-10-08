@@ -19,9 +19,34 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta property="og:image" content="./prevpage.png"></meta>
         <meta name="theme-color" content={colors.green}></meta>
         <link rel="stylesheet" href={fonts.link} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+
         <meta
           name="description"
           content="This is a lading page about furnitures. Created with Next.js and Emotion"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/icons/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/icons/favicon-16x16.png"
+        />
+        <link
+          rel="mask-icon"
+          href="/icons/safari-pinned-tab.svg"
+          color={colors.black}
         />
       </Head>
       <Global styles={Materialize} />

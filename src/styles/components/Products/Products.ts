@@ -46,15 +46,10 @@ export const Product = styled.a`
       display: flex;
     }
   }
-  &:hover {
-    transition: 0.3s;
-    transform: scale(1.1, 1.1);
-    background: #ffffff;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
-  }
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   @media (max-width:768px) {
     margin: 5px;
-    padding: 0px;
+    /* padding: 2px; */
   }
 `;
 export const ProductColors = styled.div<Color>`
